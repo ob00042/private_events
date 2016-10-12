@@ -1,0 +1,5 @@
+<% @events.each do |e| %>
+	<ul>
+		<li><%= render e %><p> <%= link_to "details", event_path(e) %></p></li>
+	</ul>
+<% end %>

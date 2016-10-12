@@ -1,0 +1,9 @@
+<%= render @event %>
+<h4>User:</h4>
+<%= @event.creator.name %></br>
+<h4>Attendees:</h4>
+<% @attendees.each do |a| %>
+	<ul>
+		<li><%= a.name %></li>
+	</ul>
+<% end %>
